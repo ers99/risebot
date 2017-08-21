@@ -1,8 +1,9 @@
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
+fs = require('fs');
+const token = fs.readFileSync('token.txt', 'utf8');
 
-const token = "<TOKEN>";
 
 var isReady = true;
 
