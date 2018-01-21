@@ -17,7 +17,7 @@ client.on('message', message => {
         var number = message.content.substr(1);
         if(parseInt(number) > 0 && parseInt(number) <= 100)
         {
-            
+            message.delete(1000);
             var voiceChannel = message.member.voiceChannel;
             if (typeof voiceChannel != 'undefined')
             {
